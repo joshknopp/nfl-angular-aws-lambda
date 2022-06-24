@@ -22,6 +22,7 @@ export class GameService {
     ]);
   }
 
+  // TODO Doesn't seem to handle type conversion at all?
   public getRemote(): Observable<Game[]> {
     return this.http.get<Game[]>(
       'https://5erg6vaepzuonuz4q5ep6obmwi0haenf.lambda-url.us-east-1.on.aws/'
